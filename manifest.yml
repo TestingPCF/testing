@@ -1,0 +1,10 @@
+--- 
+applications:
+ - name: ecomm-gateway
+   path: target/ecomm-gateway-0.0.1-SNAPSHOT.jar
+   routes:
+    - route:  ecomm-gateway.apps.cnpsandbox.dryice01.in.hclcnlabs.com  
+   instances: 1
+   memory: 750M
+   services:
+    - newrelic
